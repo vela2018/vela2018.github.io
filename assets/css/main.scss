@@ -1,0 +1,200 @@
+---
+---
+// Tools
+@import
+        "tools/normalize"
+;
+
+// Base
+@import
+        "base/variables",
+        "base/base"
+;
+
+$color-main: #FF8C00;
+$color-secondary: #333;
+
+$font-title: 'Anton', sans-serif;
+$font-body: 'Open Sans', sans-serif;
+
+body {
+  background-color: white;
+  color: #333;
+  h1,h2 {
+    font-family: $color-main;
+    font-weight: normal;
+    font-family: $font-title;
+  }
+  .orange {
+    color: $color-main;
+  }
+  .black {
+    color: $color-secondary;
+  }
+  .white {
+    color: white;
+  }
+}
+
+.site-wrapper {
+  max-width: 1000px;
+  background-color: white;
+  margin: 0 auto;
+  margin-top: 52px;
+}
+
+// --------------- Nav --------------- //
+.nav-wrapper {
+  position: fixed;
+  width: 100%;
+  margin-top: -52px;
+}
+nav {
+  background: white;
+  padding: 8px;
+  max-width: 1000px;
+  .menu {
+    float: left;
+    border: 1px solid;
+    padding: 8px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .lang {
+    float: right;
+    #eng, #span {
+      display: inline-block;
+      border: 1px solid $color-main;
+      padding: 8px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    #eng {
+      margin-right: -5px;
+    }
+  }
+}
+
+.chosen {
+  background: $color-main;
+  color: white;
+}
+
+nav::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+// --------------- Home Page --------------- //
+
+.page-home {
+  .name {
+    text-align: center;
+    padding: 25px 15px 0 15px;
+    font-family: $font-title;
+    font-weight: normal;
+    font-size: 3em;
+    color: white;
+    background: $color-main;
+  }
+  .comm {
+    text-align: center;
+    font-size: 2em;
+    font-family: $font-title;
+    font-weight: normal;
+    margin-top: -45px;
+    padding: 0 15px 25px 15px;
+    color: white;
+    background-color: $color-main;
+  }
+  .slogan {
+    text-align: center;
+    font-family: $font-body;
+    margin-top: -45px;
+    padding-bottom: 15px;
+    background-color: $color-main;
+    font-weight: bold;
+  }
+  .meet-jorge {
+    background-color: #F0F0F0;
+    padding: 15px;
+    h2 {
+      text-align: center;
+    }
+    p {
+      line-height: 1.5;
+    }
+  }
+  .read-more {
+    color: white;
+    background-color: $color-main;
+    padding: 10px;
+    text-decoration: none;
+    margin: 25px auto 15px;
+    display: block;
+    max-width: 225px;
+    border: 1px solid $color-main;
+    text-align: center;
+    &:hover {
+      background-color: white;
+      color: $color-main;
+      transition-duration: .3s;
+    }
+  }
+  .issues {
+    padding: 15px;
+    h2 {
+      text-align: center;
+    }
+    li {
+      line-height: 1.5;
+    }
+  }
+}
+
+// --------------- Email List --------------- //
+
+.email-list {
+  max-width: 500px;
+  margin: 25px auto;
+  padding: 15px;
+  #form {
+    padding: 15px;
+    border: 1px solid $color-main;
+    h2 {
+      text-align: center;
+      font-family: $font-title;
+      font-weight: normal;
+      text-transform: uppercase;
+      margin-top: 0;
+      font-size: 2em;
+    }
+    #mce-FNAME, #mce-EMAIL {
+      padding: 10px;
+      margin-bottom: 5px;
+      width: 100%;
+      border: 1px solid $color-main;
+      background-color: #F8F8F8;;
+    }
+    #mc-embedded-subscribe {
+      margin-top: 8px;
+      border: 1px solid $color-main;
+      background-color: $color-main;
+      color: white;
+      padding: 10px;
+      width: 100%;
+      &:hover {
+        background-color: white;
+        color: $color-main;
+        transition-duration: .3s;
+      }
+    }
+  }
+}
+
+.hide {
+  display: none; 
+}

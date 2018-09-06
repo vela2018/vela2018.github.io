@@ -1,0 +1,15 @@
+title:
+description:
+
+
+collections:
+  posts:
+    output: true
+    permalink: /:collection/:path/
+
+  endorsements:
+    output: true
+    permalink: /:collection/:path/
+
+markdown: kramdown
+permalink: pretty

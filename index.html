@@ -1,0 +1,66 @@
+---
+layout: default 
+
+English_About_Jorge: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus asperiores cumque repellendus quam temporibus totam aut autem enim error explicabo."
+Spanish_About_Jorge: "Esta orasion es en espanol. Pertenese a la seccion que dice meet jorge a vela. Esta orasion es en espanol. Esta orasion es en espanol. Esta orasion es en espanol."
+
+English_Key_Issue_One: "Key Issue 1 is blablabla"
+English_Key_Issue_Two: "Key Issue 2 is blablabla"
+English_Key_Issue_Three: "Key Issue 3 is blablabla"
+Spanish_Key_Issue_One: "Temp de importancia uno"
+Spanish_Key_Issue_Two: "Temp de importancia dos"
+Spanish_Key_Issue_Three: "Temp de importancia tres"
+---
+
+<div class="page-home">
+  
+  <h1 class="name">Jorge A Vela</h1>
+  <h2 class="comm">For Commissioner</h2>
+  <h2 class="slogan">#Write<span class="white">To</span>Win</h2>
+
+  {% include email.html %}
+
+  <section class="meet-jorge">
+    <h2 class="eng">Meet Jorge A Vela</h2>
+    <h2 class="span hide">Conocsa a Jorge A Vela</h2>
+    <p class="eng">{{ page.English_About_Jorge }}</p>
+    <p class="span hide">{{ page.Spanish_About_Jorge }}</p>
+    <a href="#" class="read-more"><span class="eng">Read More About Jorge</span><span class="span hide">Lea Mas Aserca de Jorge</span></a>
+  </section>
+
+  <section class="issues">
+    <h2 class="eng">Key Issues for Jorge</h2>
+    <h2 class="span hide">Temas de Importance Para Jorge</h2>
+    <ul>
+      <li class="eng">{{ page.English_Key_Issue_One }}</li>
+      <li class="eng">{{ page.English_Key_Issue_Two }}</li>
+      <li class="eng">{{ page.English_Key_Issue_Three }}</li>
+      <li class="span hide">{{ page.Spanish_Key_Issue_One }}</li>
+      <li class="span hide">{{ page.Spanish_Key_Issue_Two }}</li>
+      <li class="span hide">{{ page.Spanish_Key_Issue_Three }}</li>
+    </ul>
+    <a href="#" class="read-more"><span class="eng">Read More About the Issues</span><span class="span hide">Lea Mas Aserca los Temas</span></a>
+  </section>
+
+  {% for post in site.posts %}
+    <p><a href="{{ post.url }}">{{ post.title }}</a></p>
+  {% endfor %}
+
+  {% for endorsement in site.endorsements %}
+    <p><a href="{{ endorsement.url }}">{{ endorsement.title }}</a></p>
+  {% endfor %}
+
+  
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, reprehenderit quae. Eaque magni non accusamus amet, praesentium vel maiores ut repellat tempora corporis quod omnis reiciendis exercitationem totam, optio magnam!</p>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, reprehenderit quae. Eaque magni non accusamus amet, praesentium vel maiores ut repellat tempora corporis quod omnis reiciendis exercitationem totam, optio magnam!</p>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, reprehenderit quae. Eaque magni non accusamus amet, praesentium vel maiores ut repellat tempora corporis quod omnis reiciendis exercitationem totam, optio magnam!</p>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, reprehenderit quae. Eaque magni non accusamus amet, praesentium vel maiores ut repellat tempora corporis quod omnis reiciendis exercitationem totam, optio magnam!</p>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, reprehenderit quae. Eaque magni non accusamus amet, praesentium vel maiores ut repellat tempora corporis quod omnis reiciendis exercitationem totam, optio magnam!</p>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, reprehenderit quae. Eaque magni non accusamus amet, praesentium vel maiores ut repellat tempora corporis quod omnis reiciendis exercitationem totam, optio magnam!</p>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, reprehenderit quae. Eaque magni non accusamus amet, praesentium vel maiores ut repellat tempora corporis quod omnis reiciendis exercitationem totam, optio magnam!</p>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, reprehenderit quae. Eaque magni non accusamus amet, praesentium vel maiores ut repellat tempora corporis quod omnis reiciendis exercitationem totam, optio magnam!</p>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, reprehenderit quae. Eaque magni non accusamus amet, praesentium vel maiores ut repellat tempora corporis quod omnis reiciendis exercitationem totam, optio magnam!</p>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, reprehenderit quae. Eaque magni non accusamus amet, praesentium vel maiores ut repellat tempora corporis quod omnis reiciendis exercitationem totam, optio magnam!</p>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, reprehenderit quae. Eaque magni non accusamus amet, praesentium vel maiores ut repellat tempora corporis quod omnis reiciendis exercitationem totam, optio magnam!</p>
+
+</div>
