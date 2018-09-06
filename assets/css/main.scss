@@ -18,7 +18,8 @@ $font-title: 'Anton', sans-serif;
 $font-body: 'Open Sans', sans-serif;
 
 body {
-  background-color: white;
+  background-color: #333;
+  background-image: url("/assets/img/background.png");
   color: #333;
   h1,h2 {
     font-family: $color-main;
@@ -151,6 +152,38 @@ nav::after {
     }
     li {
       line-height: 1.5;
+    }
+  }
+  .blog-posts {
+    background-color: #F0F0F0;
+    padding: 15px;
+    h2 {
+      text-align: center;
+    }
+    .date {
+      font-size: .7em;
+      display: block;
+      font-weight: normal;
+      padding: 8px 0 5px 0;
+    }
+    .post-title {
+      text-decoration: none;
+      color: $color-secondary;
+      background-color: white;
+      display: block;
+      padding: 8px;
+      margin-top: -5px;
+      box-shadow: 0px 3px 3px #E0E0E0;
+      &:hover {
+        background-color: $color-main;
+        color: white;
+        transition-duration: .3s;
+      }
+    }
+  }
+  .endorsements {
+    h2 {
+      text-align: center;
     }
   }
 }

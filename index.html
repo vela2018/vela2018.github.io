@@ -1,18 +1,17 @@
 ---
-layout: default
-English_About_Jorge: This is the english version of the about section jorge. I'm trying
-  to see how this will look when edited on forestry.
-Spanish_About_Jorge: Esta orasion es en espanol. Pertenese a la seccion que dice meet
-  jorge a vela. Esta orasion es en espanol. Esta orasion es en espanol. Esta orasion
-  es en espanol.
-English_Key_Issue_One: Key Issue 1 is blablabla
-English_Key_Issue_Two: Key Issue 2 is blablabla
-English_Key_Issue_Three: Key Issue 3 is blablabla
-Spanish_Key_Issue_One: Temp de importancia uno
-Spanish_Key_Issue_Two: Temp de importancia dos
-Spanish_Key_Issue_Three: Temp de importancia tres
+layout: default 
 
+English_About_Jorge: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus asperiores cumque repellendus quam temporibus totam aut autem enim error explicabo."
+Spanish_About_Jorge: "Esta orasion es en espanol. Pertenese a la seccion que dice meet jorge a vela. Esta orasion es en espanol. Esta orasion es en espanol. Esta orasion es en espanol."
+
+English_Key_Issue_One: "Key Issue 1 is blablabla"
+English_Key_Issue_Two: "Key Issue 2 is blablabla"
+English_Key_Issue_Three: "Key Issue 3 is blablabla"
+Spanish_Key_Issue_One: "Temp de importancia uno"
+Spanish_Key_Issue_Two: "Temp de importancia dos"
+Spanish_Key_Issue_Three: "Temp de importancia tres"
 ---
+
 <div class="page-home">
   
   <h1 class="name">Jorge A Vela</h1>
@@ -43,13 +42,21 @@ Spanish_Key_Issue_Three: Temp de importancia tres
     <a href="#" class="read-more"><span class="eng">Read More About the Issues</span><span class="span hide">Lea Mas Aserca los Temas</span></a>
   </section>
 
-  {% for post in site.posts %}
-    <p><a href="{{ post.url }}">{{ post.title }}</a></p>
-  {% endfor %}
+  <section class="blog-posts">
+    <h2>Blog Posts</h2>
+    {% for post in site.posts %}
+      <h3><a href="{{ post.url }}" class="post-title">
+        <span class="date"><i class="far fa-clock"></i> {{ post.date | date_to_string}}</span>
+        <i class="far fa-newspaper"></i> {{ post.title }}</a></h3>
+    {% endfor %}
+    <a href="#" class="read-more">Read More Blog Posts</a>
+  </section>
 
-  {% for endorsement in site.endorsements %}
-    <p><a href="{{ endorsement.url }}">{{ endorsement.title }}</a></p>
-  {% endfor %}
+  <section class="endorsements">
+    {% for endorsement in site.endorsements %}
+      <h2 class="eng">Jorge has {{ site. endorsements | size | plus:1 }} endorsements.</h2>
+    {% endfor %}
+  </section>
 
   
   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, reprehenderit quae. Eaque magni non accusamus amet, praesentium vel maiores ut repellat tempora corporis quod omnis reiciendis exercitationem totam, optio magnam!</p>
