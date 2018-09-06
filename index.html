@@ -21,54 +21,56 @@ Spanish_Key_Issue_Three: "Temp de importancia tres"
   {% include email.html %}
 
   <section class="meet-jorge">
-    <h2 class="eng">Meet Jorge A Vela</h2>
-    <h2 class="span hide">Conocsa a Jorge A Vela</h2>
-    <p class="eng">{{ page.English_About_Jorge }}</p>
-    <p class="span hide">{{ page.Spanish_About_Jorge }}</p>
-    <a href="#" class="read-more"><span class="eng">Read More About Jorge</span><span class="span hide">Lea Mas Aserca de Jorge</span></a>
+    <div class="section-content">
+      <h2 class="eng">Meet Jorge A Vela</h2>
+      <h2 class="span hide">Conocsa a Jorge A Vela</h2>
+      <p class="eng">{{ page.English_About_Jorge }}</p>
+      <p class="span hide">{{ page.Spanish_About_Jorge }}</p>
+      <a href="#" class="read-more"><span class="eng">Read More About Jorge</span><span class="span hide">Lea Mas Aserca de Jorge</span></a>
+    </div>
   </section>
 
   <section class="issues">
-    <h2 class="eng">Key Issues for Jorge</h2>
-    <h2 class="span hide">Temas de Importance Para Jorge</h2>
-    <ul>
-      <li class="eng">{{ page.English_Key_Issue_One }}</li>
-      <li class="eng">{{ page.English_Key_Issue_Two }}</li>
-      <li class="eng">{{ page.English_Key_Issue_Three }}</li>
-      <li class="span hide">{{ page.Spanish_Key_Issue_One }}</li>
-      <li class="span hide">{{ page.Spanish_Key_Issue_Two }}</li>
-      <li class="span hide">{{ page.Spanish_Key_Issue_Three }}</li>
-    </ul>
-    <a href="#" class="read-more"><span class="eng">Read More About the Issues</span><span class="span hide">Lea Mas Aserca los Temas</span></a>
+    <div class="section-content">
+      <h2 class="eng">Key Issues for Jorge</h2>
+      <h2 class="span hide">Temas de Importance Para Jorge</h2>
+      <ul>
+        <li class="eng">{{ page.English_Key_Issue_One }}</li>
+        <li class="eng">{{ page.English_Key_Issue_Two }}</li>
+        <li class="eng">{{ page.English_Key_Issue_Three }}</li>
+        <li class="span hide">{{ page.Spanish_Key_Issue_One }}</li>
+        <li class="span hide">{{ page.Spanish_Key_Issue_Two }}</li>
+        <li class="span hide">{{ page.Spanish_Key_Issue_Three }}</li>
+      </ul>
+      <a href="#" class="read-more"><span class="eng">Read More About the Issues</span><span class="span hide">Lea Mas Aserca los Temas</span></a>
+    </div>
   </section>
 
   <section class="blog-posts">
-    <h2>Blog Posts</h2>
-    {% for post in site.posts %}
-      <h3><a href="{{ post.url }}" class="post-title">
-        <span class="date"><i class="far fa-clock"></i> {{ post.date | date_to_string}}</span>
-        <i class="far fa-newspaper"></i> {{ post.title }}</a></h3>
-    {% endfor %}
-    <a href="#" class="read-more">Read More Blog Posts</a>
+    <div class="section-content">
+      <h2>Recent Blog Posts</h2>
+      {% for post in site.posts | limit:3 %}
+        <h3><a href="{{ post.url }}" class="post-title">
+          <span class="date"><i class="far fa-clock"></i> {{ post.date | date_to_string}}</span>
+          <i class="far fa-newspaper"></i> {{ post.title }}</a></h3>
+      {% endfor %}
+      <a href="#" class="read-more">Read More Blog Posts</a>
+    </div>
   </section>
 
   <section class="endorsements">
-    {% for endorsement in site.endorsements %}
-      <h2 class="eng">Jorge has {{ site. endorsements | size | plus:1 }} endorsements.</h2>
-    {% endfor %}
+    <div class="section-content">
+      {% for endorsement in site.endorsements %}
+        <h2 class="eng">Jorge has {{ site. endorsements | size | plus:1 }} endorsements.</h2>
+      {% endfor %}
+      <p>Read why the people of El Cenizo think Jorge A Vela should be the next city commissioner of El Cenizo. Do you know Jorge Vela? Tell possible voters why they should vote for Jorge by endorsing him.</p>
+      <div class="buttons">
+        <a href="#" class="read-more" id="read-btn"><i class="fas fa-book-open"></i> Read Endorsements</a>
+        <a href="#" class="read-more" id="endorse-btn"><i class="fas fa-check"></i> Endorse Jorge</a>
+      </div>
+    </div>
   </section>
 
-  
-  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, reprehenderit quae. Eaque magni non accusamus amet, praesentium vel maiores ut repellat tempora corporis quod omnis reiciendis exercitationem totam, optio magnam!</p>
-  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, reprehenderit quae. Eaque magni non accusamus amet, praesentium vel maiores ut repellat tempora corporis quod omnis reiciendis exercitationem totam, optio magnam!</p>
-  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, reprehenderit quae. Eaque magni non accusamus amet, praesentium vel maiores ut repellat tempora corporis quod omnis reiciendis exercitationem totam, optio magnam!</p>
-  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, reprehenderit quae. Eaque magni non accusamus amet, praesentium vel maiores ut repellat tempora corporis quod omnis reiciendis exercitationem totam, optio magnam!</p>
-  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, reprehenderit quae. Eaque magni non accusamus amet, praesentium vel maiores ut repellat tempora corporis quod omnis reiciendis exercitationem totam, optio magnam!</p>
-  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, reprehenderit quae. Eaque magni non accusamus amet, praesentium vel maiores ut repellat tempora corporis quod omnis reiciendis exercitationem totam, optio magnam!</p>
-  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, reprehenderit quae. Eaque magni non accusamus amet, praesentium vel maiores ut repellat tempora corporis quod omnis reiciendis exercitationem totam, optio magnam!</p>
-  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, reprehenderit quae. Eaque magni non accusamus amet, praesentium vel maiores ut repellat tempora corporis quod omnis reiciendis exercitationem totam, optio magnam!</p>
-  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, reprehenderit quae. Eaque magni non accusamus amet, praesentium vel maiores ut repellat tempora corporis quod omnis reiciendis exercitationem totam, optio magnam!</p>
-  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, reprehenderit quae. Eaque magni non accusamus amet, praesentium vel maiores ut repellat tempora corporis quod omnis reiciendis exercitationem totam, optio magnam!</p>
-  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, reprehenderit quae. Eaque magni non accusamus amet, praesentium vel maiores ut repellat tempora corporis quod omnis reiciendis exercitationem totam, optio magnam!</p>
+  {% include page_footer.html %}
 
 </div>

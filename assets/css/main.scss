@@ -42,6 +42,7 @@ body {
   background-color: white;
   margin: 0 auto;
   margin-top: 52px;
+  margin-bottom: 25px;
 }
 
 // --------------- Nav --------------- //
@@ -92,9 +93,14 @@ nav::after {
 // --------------- Home Page --------------- //
 
 .page-home {
+  .section-content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 25px 0;
+  }
   .name {
     text-align: center;
-    padding: 25px 15px 0 15px;
+    padding: 35px 15px 0 15px;
     font-family: $font-title;
     font-weight: normal;
     font-size: 3em;
@@ -115,7 +121,7 @@ nav::after {
     text-align: center;
     font-family: $font-body;
     margin-top: -45px;
-    padding-bottom: 15px;
+    padding-bottom: 25px;
     background-color: $color-main;
     font-weight: bold;
   }
@@ -139,6 +145,7 @@ nav::after {
     max-width: 225px;
     border: 1px solid $color-main;
     text-align: center;
+    box-shadow: 0 3px 3px #E0E0E0;
     &:hover {
       background-color: white;
       color: $color-main;
@@ -182,8 +189,80 @@ nav::after {
     }
   }
   .endorsements {
+    padding: 15px;
+    p {
+      line-height: 1.4;
+    }
     h2 {
       text-align: center;
+      padding: 15px;
+    }
+    .buttons {
+      text-align: center;
+    }
+    #endorse-btn {
+      background-color: green;
+      border: 1px solid green;
+      &:hover {
+        background-color: white;
+        color: green;
+      }
+    }
+    #endorse-btn, #read-btn {
+      display: inline-block;
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .page-home {
+    .name {
+      font-size: 4.5em;
+    }
+    .comm {
+      margin-top: -60px;
+      font-size: 3em;
+    }
+    .slogan {
+      margin-top: -45px;
+      font-size: 1.5em;
+    }
+  }
+  h2 {
+    font-size: 2em;
+  }
+}
+
+// --------------- Page Footer --------------- //
+.final-section {
+  padding: 15px;
+  background-color: #E0E0E0;
+  text-align: center;
+  .links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    li {
+      display: inline-block;
+      padding: 8px;
+    }
+    a {
+      text-decoration: none;
+      color: $color-main;
+      display: block;
+      padding: 5px;
+      font-weight: bold;
+      border-bottom: 1px dotted $color-main;
+      &:hover {
+        border-bottom: 1px solid $color-main;
+      }
+    }
+  }
+  .fb {
+    color: #333;
+    font-size: 1.1em;
+    a {
+      color: #333;
     }
   }
 }
@@ -219,6 +298,7 @@ nav::after {
       color: white;
       padding: 10px;
       width: 100%;
+      box-shadow: 0 3px 3px #E0E0E0;
       &:hover {
         background-color: white;
         color: $color-main;
@@ -230,4 +310,20 @@ nav::after {
 
 .hide {
   display: none; 
+}
+
+// --------------- Footer --------------- //
+footer {
+  color: #E0E0E0;
+  text-align: center;
+  margin-bottom: 25px;
+  a {
+    color: #E0E0E0;
+    text-decoration: none;
+    border-bottom: 1px dotted #E0E0E0;
+    &:hover {
+      color: white;
+      border-bottom-color: #e0e0e0;
+    }
+  }
 }
