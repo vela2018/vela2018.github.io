@@ -10,6 +10,9 @@ English_Key_Issue_Three: "Key Issue 3 is blablabla"
 Spanish_Key_Issue_One: "Temp de importancia uno"
 Spanish_Key_Issue_Two: "Temp de importancia dos"
 Spanish_Key_Issue_Three: "Temp de importancia tres"
+
+English_Endorsement_Text: "Read why the people of El Cenizo think Jorge A Vela should be the next city commissioner of El Cenizo. Do you know Jorge Vela? Tell possible voters why they should vote for Jorge by endorsing him."
+Spanish_Endorsement_Text: "Esta orasion es en espanol. Pertenese a la seccion que dice meet jorge a vela. Esta orasion es en espanol. Esta orasion es en espanol. Esta orasion es en espanol."
 ---
 
 <div class="page-home">
@@ -20,16 +23,25 @@ Spanish_Key_Issue_Three: "Temp de importancia tres"
 
   {% include email.html %}
 
+  <!-- ---------------------------------------------------- -->
+  <!-- -------------------- Meet Jorge -------------------- -->
+  <!-- ---------------------------------------------------- -->
   <section class="meet-jorge">
     <div class="section-content">
       <h2 class="eng">Meet Jorge A Vela</h2>
       <h2 class="span hide">Conocsa a Jorge A Vela</h2>
       <p class="eng">{{ page.English_About_Jorge }}</p>
       <p class="span hide">{{ page.Spanish_About_Jorge }}</p>
-      <a href="#" class="read-more"><span class="eng">Read More About Jorge</span><span class="span hide">Lea Mas Aserca de Jorge</span></a>
+      <a href="/about" class="read-more">
+        <span class="eng">Read More About Jorge</span>
+        <span class="span hide">Lea Mas Aserca de Jorge</span>
+      </a>
     </div>
   </section>
 
+  <!-- ---------------------------------------------------- -->
+  <!-- -------------------- Key Issues -------------------- -->
+  <!-- ---------------------------------------------------- -->
   <section class="issues">
     <div class="section-content">
       <h2 class="eng">Key Issues for Jorge</h2>
@@ -46,9 +58,13 @@ Spanish_Key_Issue_Three: "Temp de importancia tres"
     </div>
   </section>
 
+  <!-- ---------------------------------------------------- -->
+  <!-- -------------------- Blog Posts -------------------- -->
+  <!-- ---------------------------------------------------- -->
   <section class="blog-posts">
     <div class="section-content">
-      <h2>Recent Blog Posts</h2>
+      <h2 class="eng">Recent Blog Posts</h2>
+      <h2 class="span hide">Blog Posts Recientes</h2>
       {% for post in site.posts | limit:3 %}
         <h3><a href="{{ post.url }}" class="post-title">
           <span class="date"><i class="far fa-clock"></i> {{ post.date | date_to_string}}</span>
@@ -58,19 +74,22 @@ Spanish_Key_Issue_Three: "Temp de importancia tres"
     </div>
   </section>
 
+  <!-- ---------------------------------------------------- -->
+  <!-- ------------------- Endorsements ------------------- -->
+  <!-- ---------------------------------------------------- -->
   <section class="endorsements">
     <div class="section-content">
       {% for endorsement in site.endorsements %}
-        <h2 class="eng">Jorge has {{ site. endorsements | size | plus:1 }} endorsements.</h2>
+        <h2 class="eng">Jorge has {{ site. endorsements | size }} endorsements.</h2>
+        <h2 class="span hide">Jorge tiene {{ site. endorsements | size }} endorsements.</h2>
       {% endfor %}
-      <p>Read why the people of El Cenizo think Jorge A Vela should be the next city commissioner of El Cenizo. Do you know Jorge Vela? Tell possible voters why they should vote for Jorge by endorsing him.</p>
+      <p class="eng">{{ page.English_Endorsement_Text }}</p>
+      <p class="span hide">{{ page.Spanish_Endorsement_Text }}</p>
       <div class="buttons">
-        <a href="#" class="read-more" id="read-btn"><i class="fas fa-book-open"></i> Read Endorsements</a>
-        <a href="#" class="read-more" id="endorse-btn"><i class="fas fa-check"></i> Endorse Jorge</a>
+        <a href="#" class="read-more" id="read-btn"> Read Endorsements</a>
+        <a href="#" class="read-more" id="endorse-btn"> Endorse Jorge</a>
       </div>
     </div>
   </section>
-
-  {% include page_footer.html %}
 
 </div>

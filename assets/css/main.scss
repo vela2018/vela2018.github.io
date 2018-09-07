@@ -1,5 +1,12 @@
 ---
 ---
+
+$color-main: #FF8C00;
+$color-secondary: #333;
+
+$font-title: 'Anton', sans-serif;
+$font-body: 'Open Sans', sans-serif;
+
 // Tools
 @import
         "tools/normalize"
@@ -11,11 +18,10 @@
         "base/base"
 ;
 
-$color-main: #FF8C00;
-$color-secondary: #333;
-
-$font-title: 'Anton', sans-serif;
-$font-body: 'Open Sans', sans-serif;
+// layouts
+@import
+        "layouts/page"
+;
 
 body {
   background-color: #333;
@@ -273,6 +279,9 @@ nav::after {
   max-width: 500px;
   margin: 25px auto;
   padding: 15px;
+  p {
+    text-align: center;
+  }
   #form {
     padding: 15px;
     border: 1px solid $color-main;
