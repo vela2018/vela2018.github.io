@@ -1,0 +1,15 @@
+---
+label: Page
+hide_body: false
+is_partial: false
+fields:
+- type: textarea
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
+    required: false
+  hidden: false
+  description: This is the text that will appear on the page body text.
+  label: Page Body Text
+  name: page_body_te
