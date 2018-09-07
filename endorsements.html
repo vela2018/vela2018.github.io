@@ -12,15 +12,16 @@ title: Endorsements
       </h3>
     </div>
   </a>
-  <div class="endorse" id="endorse">
-      <h2>Endorse Jorge</h2>
-      <form action="https://formspree.io/jorgeavela2018@gmail.com"
-      method="POST">
-        <input type="text" id="name" name="name" placeholder="Your Name">
-        <input type="email" id="email" name="_replyto" placeholder="Your Email">
-        <textarea name="message" id="message" cols="30" rows="5" placeholder="Your Endorsement"></textarea>
-        <input type="submit" id="button" value="SEND">
-        <input type="hidden" name="_next" value="/endorse-thanks" />
-      </form>
-    </div>
 {% endfor %}
+
+<div class="endorse" id="endorse">
+    <h2>Endorse Jorge</h2>
+    <form action="https://formspree.io/jorgeavela2018@gmail.com"
+    method="POST">
+      <input type="text" id="name" name="name" placeholder="Your Name">
+      <input type="email" id="email" name="_replyto" placeholder="Your Email">
+      <textarea name="message" id="message" cols="30" rows="5" placeholder="Your Endorsement"></textarea>
+      <input type="submit" id="button" value="SEND">
+      <input type="hidden" name="_next" value="/endorse-thanks" />
+    </form>
+  </div>
