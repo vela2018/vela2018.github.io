@@ -1,5 +1,7 @@
 ---
 layout: default 
+title: Jorge A Vela for El Cenizo Commissioner
+slogan: "#WriteToWin"
 
 English_About_Jorge: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus asperiores cumque repellendus quam temporibus totam aut autem enim error explicabo."
 Spanish_About_Jorge: "Esta orasion es en espanol. Pertenese a la seccion que dice meet jorge a vela. Esta orasion es en espanol. Esta orasion es en espanol. Esta orasion es en espanol."
@@ -19,7 +21,7 @@ Spanish_Endorsement_Text: "Esta orasion es en espanol. Pertenese a la seccion qu
   
   <h1 class="name">Jorge A Vela</h1>
   <h2 class="comm">For Commissioner</h2>
-  <h2 class="slogan">#Write<span class="white">To</span>Win</h2>
+  <h2 class="slogan">{{ page.slogan }}</h2>
 
   {% include email.html %}
 
@@ -29,7 +31,7 @@ Spanish_Endorsement_Text: "Esta orasion es en espanol. Pertenese a la seccion qu
   <section class="meet-jorge">
     <div class="section-content">
       <h2 class="eng">Meet Jorge A Vela</h2>
-      <h2 class="span hide">Conocsa a Jorge A Vela</h2>
+      <h2 class="span hide">Conoce a Jorge A Vela</h2>
       <p class="eng">{{ page.English_About_Jorge }}</p>
       <p class="span hide">{{ page.Spanish_About_Jorge }}</p>
       <a href="/about" class="read-more">
@@ -54,7 +56,10 @@ Spanish_Endorsement_Text: "Esta orasion es en espanol. Pertenese a la seccion qu
         <li class="span hide">{{ page.Spanish_Key_Issue_Two }}</li>
         <li class="span hide">{{ page.Spanish_Key_Issue_Three }}</li>
       </ul>
-      <a href="#" class="read-more"><span class="eng">Read More About the Issues</span><span class="span hide">Lea Mas Aserca los Temas</span></a>
+      <a href="/issues" class="read-more">
+        <span class="eng">Read More About the Issues</span>
+        <span class="span hide">Lea Mas Aserca los Temas</span>
+      </a>
     </div>
   </section>
 
@@ -64,13 +69,19 @@ Spanish_Endorsement_Text: "Esta orasion es en espanol. Pertenese a la seccion qu
   <section class="blog-posts">
     <div class="section-content">
       <h2 class="eng">Recent Blog Posts</h2>
-      <h2 class="span hide">Blog Posts Recientes</h2>
+      <h2 class="span hide">Entradas Recientes del Blog</h2>
       {% for post in site.posts | limit:3 %}
         <h3><a href="{{ post.url }}" class="post-title">
           <span class="date"><i class="far fa-clock"></i> {{ post.date | date_to_string}}</span>
-          <i class="far fa-newspaper"></i> {{ post.title }}</a></h3>
+          <i class="far fa-newspaper"></i> 
+          <span class="eng">{{ post.English_Title }}</span>
+          <span class="span hide">{{ post.Spanish_Title }}</span>
+        </a></h3>
       {% endfor %}
-      <a href="#" class="read-more">Read More Blog Posts</a>
+      <a href="/blog" class="read-more">
+        <span class="eng">Read More Blog Posts</span>
+        <span class="span hide">Lee Mas Entradas</span>
+      </a>
     </div>
   </section>
 
@@ -80,14 +91,14 @@ Spanish_Endorsement_Text: "Esta orasion es en espanol. Pertenese a la seccion qu
   <section class="endorsements">
     <div class="section-content">
       {% for endorsement in site.endorsements %}
-        <h2 class="eng">Jorge has {{ site. endorsements | size }} endorsements.</h2>
-        <h2 class="span hide">Jorge tiene {{ site. endorsements | size }} endorsements.</h2>
+        <h2 class="eng">Jorge has {{ site.endorsements | size }} endorsements.</h2>
+        <h2 class="span hide">Jorge tiene {{ site.endorsements | size }} endorsements.</h2>
       {% endfor %}
       <p class="eng">{{ page.English_Endorsement_Text }}</p>
       <p class="span hide">{{ page.Spanish_Endorsement_Text }}</p>
       <div class="buttons">
-        <a href="#" class="read-more" id="read-btn"> Read Endorsements</a>
-        <a href="#" class="read-more" id="endorse-btn"> Endorse Jorge</a>
+        <a href="/endorsements" class="read-more" id="read-btn"> Read Endorsements</a>
+        <a href="/endorsements#endorse" class="read-more" id="endorse-btn"> Endorse Jorge</a>
       </div>
     </div>
   </section>

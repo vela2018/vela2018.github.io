@@ -20,7 +20,9 @@ $font-body: 'Open Sans', sans-serif;
 
 // layouts
 @import
-        "layouts/page"
+        "layouts/page",
+        "layouts/feed",
+        "layouts/post"
 ;
 
 body {
@@ -150,6 +152,9 @@ nav::after {
         max-width: 900px;
         li {
           display: inline-block;
+          &:last-child {
+            display: none;
+          }
         }
         a {
           border: none;
@@ -404,5 +409,19 @@ footer {
       color: white;
       border-bottom-color: #e0e0e0;
     }
+  }
+}
+
+// --------------- Endorse Thanks --------------- //
+.endorse-thanks {
+  h1 {
+    text-align: center;
+    padding: 50px 15px;
+  }
+  p {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 15px 55px;
+    line-height: 1.5;
   }
 }

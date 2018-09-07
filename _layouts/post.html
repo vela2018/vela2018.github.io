@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<div class="post-wrapper">
+  <h1 class="eng">{{ page.English_Title }}</h1>
+  <h1 class="span hide">{{ page.Spanish_Title }}</h1>
+  <p class="date"><i class="far fa-clock"></i> {{ page.date | date_to_string}}</p>
+  <div class="post-content">
+    <div class="eng">{{ page.English_Post_Text }}</div>
+    <div class="span hide">{{ page.Spanish_Post_Text }}</div>
+  </div>
+  {% include email.html %}
+</div>

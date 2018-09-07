@@ -1,0 +1,17 @@
+---
+layout: feed
+title: Blog
+---
+
+{% for post in site.posts %}
+  <a href="{{ post.url }}">
+    <div class="post">
+      <span class="date"><i class="far fa-clock"></i> {{ post.date | date_to_string}}</span>
+      <h3>
+        <i class="far fa-newspaper"></i> 
+        <span class="eng">{{ post.English_Title }}</span>
+        <span class="span hide">{{ post.Spanish_Title }}</span>
+      </h3>
+    </div>
+  </a>
+{% endfor %}
