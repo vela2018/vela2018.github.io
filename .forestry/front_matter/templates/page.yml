@@ -29,5 +29,6 @@ fields:
     schema:
       format: html-blocks
 pages:
+- contact.html
 - issues.html
 - about.html
