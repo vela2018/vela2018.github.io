@@ -8,27 +8,27 @@ fields:
   type: text
   hidden: false
   default: endorsement
-- name: title
-  label: Title
-  type: text
-  hidden: false
-  default: ''
-  description: Title of the endorsement. [Person's name] Endorsement
+- type: text
+  name: title
+  label: title
+  description: 'Title of the endorsement, in the format: "[Person''s Name] Endorsement"'
   config:
     required: true
-- name: English_Endorsement
-  label: English endorsement
-  type: textarea
-  hidden: false
-  default: ''
-  description: The English version of the endorsement.
+- type: textarea
+  name: English_Endorsement
+  label: English Endorsement
+  description: English version of the endorsement.
   config:
     required: true
-- name: Spanish_Endorsement
-  label: Spanish endorsement
-  type: textarea
-  hidden: false
-  default: ''
-  config:
-    required: true
+    wysiwyg: true
+    schema:
+      format: html-blocks
+- type: textarea
+  name: Spanish_Endorsement
+  label: Spanish Endorsement
   description: Spanish version of the endorsement.
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: html-blocks
