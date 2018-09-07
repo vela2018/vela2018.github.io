@@ -3,6 +3,12 @@ label: Page Settings
 hide_body: true
 is_partial: false
 fields:
+- type: text
+  name: title
+  label: title
+  description: This is the title of the page.
+  config:
+    required: true
 - type: textarea
   config:
     wysiwyg: true
