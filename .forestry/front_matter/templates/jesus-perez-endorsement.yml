@@ -21,8 +21,14 @@ fields:
   type: textarea
   hidden: false
   default: ''
+  description: The English version of the endorsement.
+  config:
+    required: true
 - name: Spanish_Endorsement
   label: Spanish endorsement
   type: textarea
   hidden: false
   default: ''
+  config:
+    required: true
+  description: Spanish version of the endorsement.
