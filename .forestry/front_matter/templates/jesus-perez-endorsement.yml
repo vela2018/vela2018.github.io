@@ -1,7 +1,7 @@
 ---
-label: Jesus Perez Endorsement
-hide_body: 
-is_partial: 
+label: Endorsement
+hide_body: false
+is_partial: false
 fields:
 - name: layout
   label: Layout
@@ -13,11 +13,9 @@ fields:
   type: text
   hidden: false
   default: ''
-- name: endorsee
-  label: Endorsee
-  type: text
-  hidden: false
-  default: ''
+  description: Title of the endorsement. [Person's name] Endorsement
+  config:
+    required: true
 - name: English_Endorsement
   label: English endorsement
   type: textarea
