@@ -27,3 +27,5 @@ fields:
     wysiwyg: true
     schema:
       format: html-blocks
+pages:
+- _endorsements/2018-06-05-jesus-endorsements.html
