@@ -13,3 +13,5 @@ fields:
   description: This is the text that will appear on the page body text.
   label: Page Body Text
   name: page_body_te
+pages:
+- about.html
