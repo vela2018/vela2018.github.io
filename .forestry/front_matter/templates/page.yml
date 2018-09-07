@@ -2,6 +2,25 @@
 label: Page
 hide_body: true
 is_partial: false
-fields: []
+fields:
+- type: textarea
+  config:
+    wysiwyg: true
+    schema:
+      format: html-blocks
+    required: true
+  label: Page Body (English)
+  name: English_Body_Text
+  description: The English translation of the page goes here.
+  hidden: false
+- type: textarea
+  name: Spanish_Body_Text
+  label: Page Body (Spanish)
+  description: The Spanish translation of the page goes here.
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: html-blocks
 pages:
 - about.html
