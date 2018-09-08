@@ -43,5 +43,3 @@ fields:
     schema:
       format: html-blocks
   description: Spanish version of the blog post.
-pages:
-- _posts/2018-09-08-testing-foresty-post.html
