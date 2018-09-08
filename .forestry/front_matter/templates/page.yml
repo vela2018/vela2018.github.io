@@ -29,7 +29,6 @@ fields:
     schema:
       format: html-blocks
 pages:
-- _endorsements/testing-endorsement.md
 - contact.html
 - issues.html
 - about.html

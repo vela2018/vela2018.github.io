@@ -34,4 +34,5 @@ fields:
     schema:
       format: html-blocks
 pages:
+- _endorsements/testing-endorsement.md
 - _endorsements/2018-06-05-jesus-endorsements.html
