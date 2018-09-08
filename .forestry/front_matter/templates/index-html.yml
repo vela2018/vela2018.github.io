@@ -42,7 +42,7 @@ fields:
   config:
     required: true
 - type: text
-  name: English_Key_Issue_Two_
+  name: English_Key_Issue_Two
   label: English Key Issue Two
   description: English version of issue 2. Short bullet point.
   config:
