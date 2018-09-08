@@ -9,6 +9,12 @@ fields:
   description: 'Title of the endorsement, in the format: "[Person''s Name] Endorsement"'
   config:
     required: true
+- type: datetime
+  name: date
+  label: Date
+  description: Date the endorsement was entered.
+  config:
+    required: true
 - type: textarea
   name: English_Endorsement
   label: English Endorsement
