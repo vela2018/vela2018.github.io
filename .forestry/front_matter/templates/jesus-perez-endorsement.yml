@@ -33,6 +33,12 @@ fields:
     wysiwyg: true
     schema:
       format: html-blocks
+- type: text
+  name: layout
+  label: layout
+  description: Layout of page
+  hidden: true
+  default: endorsement
 pages:
 - _endorsements/testing-endorsement.md
 - _endorsements/2018-06-05-jesus-endorsements.html
