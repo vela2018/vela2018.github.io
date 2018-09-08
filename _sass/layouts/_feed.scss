@@ -24,9 +24,12 @@
     font-size: 1.2em;
     line-height: 1.5;
   }
+  #endorse {
+    margin-bottom: 100px;
+  }
   .endorse {
     border: 1px solid $color-main;
-    margin: 100px auto;
+    margin: 0 auto;
     max-width: 600px;
     padding: 15px;
     h2 {

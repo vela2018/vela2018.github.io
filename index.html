@@ -36,7 +36,7 @@ Spanish_Endorsement_Text: "Esta orasion es en espanol. Pertenese a la seccion qu
       <p class="span hide">{{ page.Spanish_About_Jorge }}</p>
       <a href="/about" class="read-more">
         <span class="eng">Read More About Jorge</span>
-        <span class="span hide">Lea Mas Aserca de Jorge</span>
+        <span class="span hide">Lea Más Sobre Jorge</span>
       </a>
     </div>
   </section>
@@ -47,7 +47,7 @@ Spanish_Endorsement_Text: "Esta orasion es en espanol. Pertenese a la seccion qu
   <section class="issues">
     <div class="section-content">
       <h2 class="eng">Key Issues for Jorge</h2>
-      <h2 class="span hide">Temas de Importance Para Jorge</h2>
+      <h2 class="span hide">Propuestas de Jorge</h2>
       <ul>
         <li class="eng">{{ page.English_Key_Issue_One }}</li>
         <li class="eng">{{ page.English_Key_Issue_Two }}</li>
@@ -58,7 +58,7 @@ Spanish_Endorsement_Text: "Esta orasion es en espanol. Pertenese a la seccion qu
       </ul>
       <a href="/issues" class="read-more">
         <span class="eng">Read More About the Issues</span>
-        <span class="span hide">Lea Mas Aserca los Temas</span>
+        <span class="span hide">Lea Más Sobre Propuestas</span>
       </a>
     </div>
   </section>
@@ -80,7 +80,7 @@ Spanish_Endorsement_Text: "Esta orasion es en espanol. Pertenese a la seccion qu
       {% endfor %}
       <a href="/blog" class="read-more">
         <span class="eng">Read More Blog Posts</span>
-        <span class="span hide">Lee Mas Entradas</span>
+        <span class="span hide">Lea Más Entradas</span>
       </a>
     </div>
   </section>
@@ -90,13 +90,19 @@ Spanish_Endorsement_Text: "Esta orasion es en espanol. Pertenese a la seccion qu
   <!-- ---------------------------------------------------- -->
   <section class="endorsements">
     <div class="section-content">
-      <h2 class="eng">Jorge has {{ site.endorsements | size }} endorsements.</h2>
-      <h2 class="span hide">Jorge tiene {{ site.endorsements | size }} endorsements.</h2>
+      <h2 class="eng">Jorge has {{ site.endorsements | size }} Public Endorsements.</h2>
+      <h2 class="span hide">Jorge tiene {{ site.endorsements | size }} Apoyos Públicos.</h2>
       <p class="eng">{{ page.English_Endorsement_Text }}</p>
       <p class="span hide">{{ page.Spanish_Endorsement_Text }}</p>
       <div class="buttons">
-        <a href="/endorsements" class="read-more" id="read-btn"> Read Endorsements</a>
-        <a href="/endorsements#endorse" class="read-more" id="endorse-btn"> Endorse Jorge</a>
+        <a href="/endorsements" class="read-more" id="read-btn"> 
+          <div class="eng">Read Endorsements</div>
+          <div class="span hide">Lea Apoyos Públicos</div>
+        </a>
+        <a href="/endorsements#endorse" class="read-more" id="endorse-btn"> 
+          <div class="eng">Endorse Jorge</div>
+          <div class="span hide">Apoye a Jorge</div>
+        </a>
       </div>
     </div>
   </section>
