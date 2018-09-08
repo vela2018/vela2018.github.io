@@ -17,3 +17,5 @@ fields:
   description: Home page slogan.
   config:
     required: true
+pages:
+- index.html
