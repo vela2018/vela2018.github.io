@@ -47,5 +47,11 @@ fields:
   description: English version of issue 2. Short bullet point.
   config:
     required: true
+- type: text
+  name: English_Key_Issue_Three
+  label: English Key Issue Three
+  description: English version of issue 3. Short bullet point.
+  config:
+    required: true
 pages:
 - index.html
