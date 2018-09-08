@@ -44,6 +44,7 @@ fields:
       format: html-blocks
   description: Spanish version of the blog post.
 pages:
+- _posts/proposal-4-be-your-voice.html
 - _posts/2018-09-08-proposal-3-encouraging-local-education.html
 - _posts/2018-09-08-proposal-2-bettering-the-city-s-infrastructure.html
 - _posts/proposal-1-a-recreation-center-for-everybody.html
