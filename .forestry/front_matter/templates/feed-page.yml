@@ -2,4 +2,16 @@
 label: Feed Page
 hide_body: true
 is_partial: false
-fields: []
+fields:
+- type: text
+  name: English_Title
+  label: English Title
+  description: English version of the page title.
+  config:
+    required: true
+- type: text
+  config:
+    required: true
+  name: Spanish_Title
+  label: Spanish Title
+  description: Spanish version of the page title.
