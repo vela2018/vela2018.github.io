@@ -4,6 +4,13 @@ hide_body: true
 is_partial: false
 fields:
 - type: text
+  hidden: true
+  config:
+    required: true
+  label: Title
+  name: title
+  description: Name of the page.
+- type: text
   name: English_Title
   label: English Title
   description: English version of the page title.
