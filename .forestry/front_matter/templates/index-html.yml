@@ -36,7 +36,7 @@ fields:
     schema:
       format: html-blocks
 - type: text
-  name: English_Key_Issue_One_
+  name: English_Key_Issue_One
   label: English Key Issue One
   description: English version of issue 1. Short bullet point.
   config:
