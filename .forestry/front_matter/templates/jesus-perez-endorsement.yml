@@ -37,4 +37,5 @@ fields:
   label: Spanish Endorsement
   description: Spanish version of the endorsement.
 pages:
+- _endorsements/test-endorsement.html
 - _endorsements/2018-06-05-jesus-endorsements.html
