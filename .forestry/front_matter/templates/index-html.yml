@@ -35,5 +35,17 @@ fields:
     wysiwyg: true
     schema:
       format: html-blocks
+- type: text
+  name: English_Key_Issue_One_
+  label: English Key Issue One
+  description: English version of issue 1. Short bullet point.
+  config:
+    required: true
+- type: text
+  name: English_Key_Issue_Two_
+  label: English Key Issue Two
+  description: English version of issue 2. Short bullet point.
+  config:
+    required: true
 pages:
 - index.html
