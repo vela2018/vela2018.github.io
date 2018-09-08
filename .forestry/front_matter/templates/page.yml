@@ -41,7 +41,7 @@ fields:
     schema:
       format: html-blocks
 pages:
+- about.html
 - endorse-thanks.html
 - contact.html
 - issues.html
-- about.html
