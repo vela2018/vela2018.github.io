@@ -16,4 +16,5 @@ fields:
   label: Spanish Title
   description: Spanish version of the page title.
 pages:
+- blog.html
 - endorsements.html
