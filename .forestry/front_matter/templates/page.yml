@@ -30,7 +30,7 @@ fields:
   label: Page Body (Spanish)
   description: The Spanish translation of the page goes here.
   config:
-    required: false
+    required: true
     wysiwyg: true
     schema:
       format: html-blocks
