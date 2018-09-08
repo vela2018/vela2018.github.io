@@ -1,30 +1,45 @@
 ---
 label: this-is-a-post.html
-hide_body: 
-is_partial: 
+hide_body: true
+is_partial: false
 fields:
 - name: layout
   label: Layout
   type: text
-  hidden: false
-  default: ''
+  hidden: true
+  default: post
 - name: English_Title
   label: English title
   type: text
   hidden: false
   default: ''
+  description: English version of the blog post title.
+  config:
+    required: true
 - name: Spanish_Title
   label: Spanish title
   type: text
   hidden: false
   default: ''
-- name: English_Post_Text
-  label: English post text
-  type: textarea
-  hidden: false
+  config:
+    required: true
+  description: Spanish version of the blog post title.
+- type: textarea
+  name: English_Post_Text
+  label: English Post Text
   default: ''
-- name: Spanish_Post_Text
-  label: Spanish post text
-  type: textarea
-  hidden: false
-  default: ''
+  description: English version of the blog post.
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: markdown
+- type: textarea
+  name: Spanish_Post_Text
+  label: Spanish Post Text
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  description: Spanish version of the blog post.
