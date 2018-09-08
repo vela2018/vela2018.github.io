@@ -9,6 +9,7 @@ fields:
   config:
     required: true
   description: Title of the page as shown in the pages tab.
+  hidden: true
 - type: text
   name: English_Title
   label: English Title
