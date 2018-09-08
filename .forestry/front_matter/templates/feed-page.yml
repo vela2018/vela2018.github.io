@@ -4,12 +4,12 @@ hide_body: true
 is_partial: false
 fields:
 - type: text
-  hidden: true
+  hidden: false
   config:
     required: true
   label: Title
   name: title
-  description: Name of the page.
+  description: Name of the page as shown in sidebar.
 - type: text
   name: English_Title
   label: English Title
