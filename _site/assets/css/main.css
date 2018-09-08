@@ -261,6 +261,17 @@ body {
     max-width: 650px;
     margin: 60px auto 35px;
     line-height: 1.5; }
+    .post-wrapper .post-content .share {
+      background-color: #F0F0F0;
+      padding: 15px;
+      margin-top: 35px;
+      background-image: url("/assets/img/share-background.png"); }
+      .post-wrapper .post-content .share h3 {
+        text-align: center; }
+      .post-wrapper .post-content .share .share-btns {
+        display: block;
+        margin-top: 25px;
+        text-align: center; }
 
 body {
   background-color: #666;
