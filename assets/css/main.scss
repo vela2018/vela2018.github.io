@@ -202,6 +202,7 @@ nav::after {
     text-align: center;
     font-family: $font-body;
     margin-top: -45px;
+    margin-bottom: 0;
     padding-bottom: 25px;
     background-color: $color-main;
     font-weight: bold;
@@ -349,11 +350,16 @@ nav::after {
 }
 
 // --------------- Email List --------------- //
-
+.email-wrapper {
+  background-color: pink;
+  padding: 15px;
+  background-color: #E0E0E0;
+  background-image: url("/assets/img/share-background.png");
+}
 .email-list {
   max-width: 500px;
   margin: 25px auto;
-  padding: 15px;
+  background-color: white;
   p {
     text-align: center;
   }

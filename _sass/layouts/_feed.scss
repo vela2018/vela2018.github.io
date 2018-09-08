@@ -1,7 +1,9 @@
 .feed-content {
-  max-width: 800px;
-  margin: 35px auto;
-  padding: 15px;
+  .content {
+    max-width: 800px;
+    margin: 35px auto;
+    padding: 15px;
+  }
   a {
     background-color: #F0F0F0;
     text-decoration: none;
@@ -46,6 +48,12 @@
       color: white;
       padding: 12px;
       border: 1px solid $color-main;
+      box-shadow: 0 3px 3px #E0E0E0;
+      &:hover {
+        background-color: white;
+        color: $color-main;
+        transition-duration: .3s;
+      }
     }
   }
 }
