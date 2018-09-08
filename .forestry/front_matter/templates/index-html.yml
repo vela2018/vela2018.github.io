@@ -53,5 +53,43 @@ fields:
   description: English version of issue 3. Short bullet point.
   config:
     required: true
+- type: text
+  name: Spanish_Key_Issue_One
+  label: Spanish Key Issue One
+  description: Spanish version of issue 1. Short bullet point.
+  config:
+    required: true
+- type: text
+  name: Spanish_Key_Issue_Two
+  label: Spanish Key Issue Two
+  description: Spanish version of issue 2. Short bullet point.
+  config:
+    required: true
+- type: text
+  name: Spanish_Key_Issue_Three
+  label: Spanish Key Issue Three
+  description: Spanish version of issue 3. Short bullet point.
+  config:
+    required: true
+- type: textarea
+  name: English_Endorsement_Text
+  label: English Endorsement Text
+  description: English version of endorsement section. Few sentences long asking people
+    to read and endorse.
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: html-blocks
+- type: textarea
+  name: Spanish_Endorsement_Text
+  label: Spanish Endorsement Text
+  description: Spanish version of endorsement section. Few sentences long asking people
+    to read and endorse.
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: html-blocks
 pages:
 - index.html
