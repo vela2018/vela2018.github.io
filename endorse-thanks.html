@@ -1,20 +1,17 @@
 ---
 layout: default
-English_Title: Thank you for the endorsement!
-Spanish_Title: 'Gracias por tu apoyo! '
-title: Endorsement Thank You Page
-English_Body_Text: "<p>Thank you for endorsing Jorge! We will review the endorsement
-  before posting. We'll send you an email when it's posted so you can share it with
-  your friends.</p>"
-Spanish_Body_Text: "<p>Gracias por apoyar a Jorge! Revisaremos el endoso antes de
-  publicarlo. Te enviaremos un correo electrónico cuando se publique para que puedas
-  compartirlo con tus amigos.</p>"
 
+English_Title:
+Spanish_Title:
+
+English_Body_Text:
+Spanish_Body_Text:
 ---
+
 <div class="endorse-thanks">
-  <h1 class="eng">Thank you for the endorsement!</h1>
-  <h1 class="span hide">Thank you for the endorsement!</h1>
-  <p class="eng">Thank you for endorsing Jorge! We will review the endorsement before posting. We'll send you an email when it's posted so you can share it with your friends.</p>
-  <p class="span hide">Gracias por apoyar a Jorge! Revisaremos el endoso antes de publicarlo. Te enviaremos un correo electrónico cuando se publique para que puedas compartirlo con tus amigos.</p>
-  {% include email.html %}
+  <h1 class="eng">{{ page.English_Title }}</h1>
+  <h1 class="span hide">{{ page.Spanish_Title }}</h1>
+  <p class="eng">{{ page.English_Body_Text }}</p>
+  <p class="span hide">{{ page.Spanish_Body_Text }}</p>
 </div>
+{% include email.html %}
