@@ -44,5 +44,5 @@ fields:
       format: html-blocks
   description: Spanish version of the blog post.
 pages:
-- _posts/proposal-2-bettering-the-city-s-infrastructure.html
+- _posts/2018-09-08-proposal-2-bettering-the-city-s-infrastructure.html
 - _posts/2018-09-08-objetivo-1-a-recreation-center-for-everybody.html
