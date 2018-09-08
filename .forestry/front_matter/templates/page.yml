@@ -4,9 +4,15 @@ hide_body: true
 is_partial: false
 fields:
 - type: text
-  name: title
-  label: title
-  description: This is the title of the page.
+  name: English_Title
+  label: English Title
+  description: English version of the page title.
+  config:
+    required: true
+- type: text
+  name: Spanish_Title
+  label: Spanish Title
+  description: Spanish version of the page title.
   config:
     required: true
 - type: textarea
