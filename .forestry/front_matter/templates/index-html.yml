@@ -26,5 +26,14 @@ fields:
       format: html-blocks
     required: true
   description: English version of a brief about jorge. Few sentences long.
+- type: textarea
+  name: Spanish_About_Jorge_
+  label: Spanish About Jorge
+  description: Spanish version of a brief about jorge. Few sentences long.
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: html-blocks
 pages:
 - index.html
