@@ -27,7 +27,7 @@ fields:
     required: true
   description: English version of a brief about jorge. Few sentences long.
 - type: textarea
-  name: Spanish_About_Jorge_
+  name: Spanish_About_Jorge
   label: Spanish About Jorge
   description: Spanish version of a brief about jorge. Few sentences long.
   config:
