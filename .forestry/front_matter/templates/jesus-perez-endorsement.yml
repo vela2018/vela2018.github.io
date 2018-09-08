@@ -36,3 +36,5 @@ fields:
   name: Spanish_Endorsement
   label: Spanish Endorsement
   description: Spanish version of the endorsement.
+pages:
+- _endorsements/jesus-endorsement.html
