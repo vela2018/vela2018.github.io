@@ -17,5 +17,11 @@ fields:
   description: Home page slogan.
   config:
     required: true
+- type: text
+  name: English_About_Jorge_
+  label: English About Jorge
+  description: English version of brief bio.
+  config:
+    required: true
 pages:
 - index.html
