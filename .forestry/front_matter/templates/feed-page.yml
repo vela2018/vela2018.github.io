@@ -4,7 +4,7 @@ hide_body: true
 is_partial: false
 fields:
 - type: text
-  hidden: false
+  hidden: true
   config:
     required: true
   label: Title
