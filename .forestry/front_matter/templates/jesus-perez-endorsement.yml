@@ -37,5 +37,6 @@ fields:
   label: Spanish Endorsement
   description: Spanish version of the endorsement.
 pages:
+- _endorsements/mari-lee-paez-endorsement.html
 - _endorsements/jesus-endorsement.html
 - _endorsements/juan-idrogo.html
